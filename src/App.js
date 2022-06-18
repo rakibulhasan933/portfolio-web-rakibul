@@ -1,4 +1,5 @@
 import './App.css';
+import Humbergar from './components/Humbergar';
 import logo from './components/img/logo.png';
 import moon from './components/img/moon.png';
 
@@ -29,6 +30,14 @@ function App() {
             </li>
           </ul>
           <img className=' hidden md:block w-5 cursor-pointer' src={moon} alt="moon" />
+          <div className=' space-y-1 md:hidden cursor-pointer z-20'>
+            <div className=" w-6 h-0.5 bg-black"></div>
+            <div className=" w-6 h-0.5 bg-black"></div>
+            <div className=" w-6 h-0.5 bg-black"></div>
+          </div>
+          <ul className=' hidden bg-indigo-900 absolute left-0 top-0 w-full rounded-b-3xl space-y-10 text-white text-center'>
+            <Humbergar />
+          </ul>
         </div>
       </nav>
     </div>
